@@ -5,13 +5,44 @@
   font-family: "poppins";
 }
 
+body {
+  background: url(./images/bg-intro-mobile.png);
+  background-color: #ff7979;
+  color: white;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.container {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
 h1 {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 1em;
 }
 
 p {
   font-weight: 500;
+}
+
+.trial-message {
+  margin-top: 3em;
+  background-color: #5e54a4;
+  padding: 1em 5em;
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.125);
 }
 
 .trial-message p {
@@ -19,24 +50,55 @@ p {
   font-weight: 400;
 }
 
-.font-bold {
-  font-weight: 700;
+#form {
+  background-color: white;
+  padding: 1.25em 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.125);
+}
+
+#form input {
+  outline: none;
+  border: 1px #dedede solid;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  width: 100%;
+  padding: 1em;
 }
 
 #form input::placeholder {
   font-size: 14px;
   font-weight: 600;
+  color: #3d3b48;
 }
 
 #form button {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 15px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #38cc8b;
+  border: none;
+  border-radius: 8px;
+  padding: 1em 0;
+  width: 100%;
+  box-shadow: inset 0 -4px rgba(0, 0, 0, 0.125);
+  cursor: pointer;
+}
+
+#form button:hover {
+  background-color: #77e2b3;
 }
 
 .terms-and-services {
   font-size: 11px;
+  color: #bab7d4;
+  padding: 0.75em 2em;
+}
+
+.terms-and-services .font-bold {
+  color: #ff7979;
 }
 
 /* 
