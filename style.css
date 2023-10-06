@@ -24,6 +24,7 @@ body {
   width: 90%;
   margin: 0 auto;
   padding: 2em 0;
+  max-width: 600px;
 }
 
 h1 {
@@ -64,6 +65,8 @@ p {
   margin-bottom: 1em;
   width: 100%;
   padding: 1em;
+  color: #3d3b48;
+  font-weight: 600;
 }
 
 #form input::placeholder {
@@ -99,6 +102,49 @@ p {
 
 .terms-and-services .font-bold {
   color: #ff7979;
+}
+
+@media (min-width: 900px) {
+  .row {
+    display: flex;
+  }
+
+  .container {
+    max-width: 1200px;
+    text-align: left;
+  }
+
+  .intro {
+    align-self: center;
+    width: 50%;
+  }
+
+  .cta {
+    width: 45%;
+    margin-left: auto;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .trial-message {
+    padding: 1.25em 0;
+    text-align: center;
+  }
+
+  #form {
+    padding: 2.5em 2em;
+    text-align: center;
+  }
+
+  #form input {
+    margin-bottom: 1.25em;
+  }
+
+  .terms-and-services {
+    padding: 0.75em 0;
+  }
 }
 
 /* 
