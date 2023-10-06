@@ -120,6 +120,11 @@ p {
 }
 
 @media (min-width: 900px) {
+  body {
+    background: url(./images/bg-intro-desktop.png);
+    background-color: #ff7979;
+  }
+
   .row {
     display: flex;
   }
