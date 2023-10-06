@@ -58,15 +58,29 @@ p {
   box-shadow: 0 8px rgba(0, 0, 0, 0.125);
 }
 
+.error-message {
+  font-size: 11px;
+  padding-top: 0.125em;
+  text-align: right;
+  font-style: italic;
+  color: #ff7979;
+}
+
 #form input {
   outline: none;
   border: 1px #dedede solid;
   border-radius: 8px;
-  margin-bottom: 1em;
+  margin-top: 1em;
   width: 100%;
   padding: 1em;
   color: #3d3b48;
   font-weight: 600;
+}
+
+#form .error {
+  border: 2px solid #ff7979;
+  background: url(./images/icon-error.svg) no-repeat right;
+  background-position: 95% 50%;
 }
 
 #form input::placeholder {
@@ -88,6 +102,7 @@ p {
   width: 100%;
   box-shadow: inset 0 -4px rgba(0, 0, 0, 0.125);
   cursor: pointer;
+  margin-top: 1em;
 }
 
 #form button:hover {
